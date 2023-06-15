@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim gia tri lon nhat trong mang</title>
+</head>
+<body>
+<input type="submit" value="Search max value in arrray" onclick="searchMaxValueInArray()">
+</body>
+<script>
+  function searchMaxValueInArray(){
+    let arr = [11, 32, 2, 4, 55, 33, 90];
+    let maxValue = arr[0];
+    let index = 0;
+    for(let i=1; i<arr.length; i++){
+      if(arr[i] > maxValue){
+        maxValue = arr[i];
+        index = i;
+      }
+    }
+    document.write(maxValue +" la so lon nhat trong mang");
+  }
+</script>
+</html>
